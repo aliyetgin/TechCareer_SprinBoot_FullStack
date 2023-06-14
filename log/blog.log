@@ -333,3 +333,72 @@ Consider defining a bean named 'auditorAwareMethod' in your configuration.
 2023-06-14T19:36:51.409+03:00 DEBUG 9496 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
 2023-06-14T19:36:51.410+03:00 DEBUG 9496 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 14 22:06:51 IST 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
 2023-06-14T19:36:51.418+03:00 DEBUG 9496 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-06-14T23:01:49.329+03:00  INFO 9496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T23:01:49.365+03:00  INFO 9496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-14T23:01:49.372+03:00  INFO 9496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-14T23:34:19.883+03:00  INFO 6308 --- [restartedMain] c.a.TechCareerFullStackApplication       : Starting TechCareerFullStackApplication using Java 20.0.1 with PID 6308 (D:\Coding\BOOTCAMP\TechCareer_FullStack\target\classes started by aliyt in D:\Coding\BOOTCAMP\TechCareer_FullStack)
+2023-06-14T23:34:19.887+03:00  INFO 6308 --- [restartedMain] c.a.TechCareerFullStackApplication       : The following 1 profile is active: "frontend"
+2023-06-14T23:34:19.990+03:00  INFO 6308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-14T23:34:19.991+03:00  INFO 6308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-14T23:34:21.943+03:00  INFO 6308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T23:34:21.979+03:00  INFO 6308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2023-06-14T23:34:23.288+03:00  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-14T23:34:23.315+03:00  INFO 6308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-14T23:34:23.316+03:00  INFO 6308 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T23:34:23.448+03:00  INFO 6308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-14T23:34:23.449+03:00  INFO 6308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3458 ms
+2023-06-14T23:34:23.639+03:00  INFO 6308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-14T23:34:24.034+03:00  INFO 6308 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-06-14T23:34:24.037+03:00  INFO 6308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-14T23:34:24.056+03:00  INFO 6308 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-06-14T23:34:24.121+03:00 DEBUG 6308 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-14T23:34:24.122+03:00 DEBUG 6308 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-14T23:34:24.855+03:00  INFO 6308 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-14T23:34:25.406+03:00  INFO 6308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T23:34:25.704+03:00  WARN 6308 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T23:34:25.927+03:00 DEBUG 6308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-14T23:34:26.097+03:00 DEBUG 6308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2023-06-14T23:34:27.217+03:00 DEBUG 6308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-14T23:34:27.232+03:00 DEBUG 6308 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-14T23:34:27.289+03:00  WARN 6308 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T23:34:28.011+03:00  INFO 6308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T23:34:28.143+03:00  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-14T23:34:28.284+03:00  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2023-06-14T23:34:28.286+03:00  INFO 6308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-14T23:34:28.286+03:00  INFO 6308 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T23:34:28.340+03:00  INFO 6308 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-06-14T23:34:28.341+03:00  INFO 6308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2023-06-14T23:34:28.362+03:00  INFO 6308 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/admin'
+2023-06-14T23:34:28.396+03:00 DEBUG 6308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2023-06-14T23:34:29.062+03:00 DEBUG 6308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-14T23:34:29.074+03:00 DEBUG 6308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-14T23:34:29.086+03:00  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2023-06-14T23:34:29.114+03:00  INFO 6308 --- [restartedMain] c.a.TechCareerFullStackApplication       : Started TechCareerFullStackApplication in 10.113 seconds (process running for 11.298)
+2023-06-14T23:35:12.119+03:00  INFO 6308 --- [http-nio-3333-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-14T23:35:12.119+03:00  INFO 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-14T23:35:12.120+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-14T23:35:12.120+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-14T23:35:12.120+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-14T23:35:12.122+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@76f8107a
+2023-06-14T23:35:12.122+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e5a2436
+2023-06-14T23:35:12.123+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-14T23:35:12.123+03:00  INFO 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-06-14T23:35:12.160+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-06-14T23:35:12.172+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-14T23:35:12.256+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-06-14T23:35:12.259+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-06-14T23:35:12.266+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-06-14T23:35:12.271+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-14T23:35:12.316+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-06-14T23:35:12.329+03:00 DEBUG 6308 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-06-14T23:35:26.791+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-06-14T23:35:26.792+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-14T23:35:26.793+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-06-14T23:35:26.793+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-06-14T23:35:26.794+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-06-14T23:35:26.795+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-14T23:35:26.816+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-06-14T23:35:26.816+03:00 DEBUG 6308 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-06-14T23:39:31.472+03:00  INFO 6308 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T23:39:31.477+03:00  INFO 6308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-14T23:39:31.480+03:00  INFO 6308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

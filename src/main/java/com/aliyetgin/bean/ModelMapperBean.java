@@ -1,4 +1,4 @@
-package com.aliyetgin.TechCareer_FullStack.bean;
+package com.aliyetgin.bean;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

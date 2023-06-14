@@ -1,4 +1,4 @@
-package com.aliyetgin.TechCareer_FullStack;
+package com.aliyetgin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
