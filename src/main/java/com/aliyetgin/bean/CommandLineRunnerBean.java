@@ -17,4 +17,20 @@ import java.util.UUID;
 @Configuration
 public class CommandLineRunnerBean {
 
+    private final BlogServiceImpl blogService;
+
+    @Bean
+    public CommandLineRunner commandLineRunnerMethod(){
+        return args -> {
+            List<BlogDto> list = new ArrayList<>();
+            for (int i = 1; i <= 10; i++) {
+                BlogDto blogDto = BlogDto.builder()
+                        .header("header " + UUID.randomUUID().toString())
+                        .content("content " + UUID.randomUUID().toString())
+                        .build();
+                blogService.blogServiceCreate(blogDto);
+                list.add(blogDto);
+            }
+        }; //end args
+    } // end command Line Runner Method
 } // end class
